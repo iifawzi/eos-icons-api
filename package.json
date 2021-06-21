@@ -48,6 +48,7 @@
     "grunt-text-replace": "^0.4.0",
     "grunt-webfont": "^1.7.2",
     "mongoose": "^5.12.13",
+    "newman": "^5.2.3",
     "node-cmd": "^4.0.0",
     "pify": "^3.0.0",
     "svg2img": "^0.9.3",
