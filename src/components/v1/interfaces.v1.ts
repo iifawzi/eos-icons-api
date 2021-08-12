@@ -2,9 +2,10 @@
 // Icons Controller interfaces:
 // *********************************
 
-import { customizedConfig } from 'common/types'
+import { CustomizedConfig, iconsThemeV1 } from 'common/types'
 
-export interface getSvgCodePayload {
+export interface GetSvgCodePayload {
 iconArray: string[],
-customizationConfig: customizedConfig
+customizationConfig: CustomizedConfig,
+theme: iconsThemeV1
 }

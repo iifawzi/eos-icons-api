@@ -7,29 +7,29 @@
 export type ExportType = 'png' | 'svg' | 'font';
 
 // The allowed flip properties:
-export interface flipObject {
+export interface FlipObject {
     horizontal: boolean,
     vertical: boolean
 }
 
 // The allowed customization configs:
-export interface customizedConfig {
+export interface CustomizedConfig {
     colorCode?: string,
     rotateAngle?: number,
     size?: number
-    flip?: flipObject
+    flip?: FlipObject
 }
 
 // IconsPayload:
-export interface iconsPayload {
+export interface IconsPayload {
     icons: string[]
 }
 
 // Icons with customization configs payload:
-export interface customizedIconsPayload extends iconsPayload {
+export interface CustomizedIconsPayload extends IconsPayload {
     exportAs?: ExportType,
     exportSize?: number,
-    customizationConfig?: customizedConfig
+    customizationConfig?: CustomizedConfig
 }
 
 // *********************************
@@ -38,14 +38,14 @@ export interface customizedIconsPayload extends iconsPayload {
 
 // Available themes:
 export enum iconsTheme {
-    filled,
-    outlined
+    filled = 'filled',
+    outlined = 'outlined'
 }
 
-// Backward compatability for V1 APIs: 
+// Backward compatability for V1 APIs:
 export enum iconsThemeV1 {
-    'svg' = 'svg',
-    'svg-outlined' = 'svg-outlined'
+    svg = 'svg',
+    outlined = 'outlined'
 }
 
 // A dictionary with the themes as a keys:
